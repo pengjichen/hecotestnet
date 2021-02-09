@@ -18,6 +18,7 @@ docker run -d --name hecotestnet1.1 \
            -p 8545:8545 \
            -p 30303:30303 \
            -p 8546:8546 \
+           --restart=unless-stopped \
            hecofans/geth:1.1 \
            geth-linux-amd64 --config /root/hecotestnet/config.toml  \
                 --logpath /root/hecotestnet/data/logs \
