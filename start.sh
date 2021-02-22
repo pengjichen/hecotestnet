@@ -21,10 +21,6 @@ docker run -d --name hecotestnet1.1 \
            --restart=unless-stopped \
            hecofans/geth:1.1 \
            geth-linux-amd64 --config /root/hecotestnet/config.toml  \
-                --rpc --rpcport 8545 --rpcaddr 0.0.0.0  --ws --wsaddr 0.0.0.0 --wsport 8546 --wsorigins "*" \
-                #--rpc --rpcapi "admin,db,eth,net,web3,personal" --rpcport 8545 --rpcaddr 0.0.0.0  --ws --wsaddr 0.0.0.0 --wsport 8546 --wsorigins "*" \
                 --logpath /root/hecotestnet/data/logs \
                 --testnet \
-                #--syncmode full \
-                --gcmode archive \
                 --verbosity 3
